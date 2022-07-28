@@ -16,7 +16,7 @@
 
 terraform {
   backend "gcs" {
-    bucket = "prosa-test-356900-tfstate"
+    bucket = "PROJECT_ID-tfstate"
     prefix = "jenkins"
   }
 }
