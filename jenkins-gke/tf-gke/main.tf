@@ -72,8 +72,8 @@ module "jenkins-vpc" {
   Jenkins GKE
  *****************************************/
 module "jenkins-gke" {
-  source                   = "terraform-google-modules/kubernetes-engine/google"
-  version                  = "~> 18.0"
+  source                   = "terraform-google-modules/kubernetes-engine/google//modules/beta-public-cluster"
+  version                  = "~> 16.0"
   project_id               = module.enables-google-apis.project_id
   name                     = "jenkins"
   regional                 = false
